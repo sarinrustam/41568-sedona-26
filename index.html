@@ -22,17 +22,17 @@
     </header>
 
     <main>
-        <h1>Город Седона</h1>
+        <h1 class="visually-hidden">Город Седона</h1>
 
         <section>
-            <h2>Приветсвие</h2>
+            <h2 class="visually-hidden">Приветсвие</h2>
             <!-- <img src="img/intro-background.png" width="1200" height="800" alt="Фон приветствия"> -->
             <img src="img/intro-welcome.svg" width="458" height="352" alt="Приветсвтие">
         </section>
         <!-- Весь контент обернуть в секцию "5 причин", затем каждую причину можно будет обернуть в div,
   а раздел рекомендаций можно будет обернуть в секцию -->
         <article>
-            <h2>5 преимуществ Седоны</h2>
+            <h2 class="visually-hidden">5 преимуществ Седоны</h2>
             <!-- блок с текстом, выбрал блок div, потому что не получится по смыслу вырвать из контекста -->
             <div>
                 <p>Седона - небольшой городок в Аризоне, <br> заслуживающий большего!</p>
@@ -40,7 +40,7 @@
             </div>
             <!-- Причина № 1 -->
             <section>
-                <h3>Первое преимущество</h3>
+                <h3 class="visually-hidden">Первое преимущество</h3>
                 <section>
                     <h4>Настоящий городок</h4>
                     <p>— №1 —</p>
@@ -52,7 +52,7 @@
             </section>
             <!-- Советы для туристов, использую section, потому что этот блок можно выдернуть из контекста -->
             <section>
-                <h2>Рекомндации для туристов</h2>
+                <h2 class="visually-hidden">Рекомндации для туристов</h2>
                 <section>
 
                     <img src="img/icon-home.svg" width="75" height="72" alt="иконка домика">
@@ -74,7 +74,7 @@
             </section>
             <!-- Причина №2 -->
             <section>
-                <h3>Второе преимущество</h3>
+                <h3 class="visually-hidden">Второе преимущество</h3>
                 <section>
                     <h4>Там есть мост дьявола</h4>
                     <p>— №2 —</p>
@@ -107,7 +107,7 @@
         </article>
         <!-- Решил обернуть в section, потому что можно вырвать из контекста(хотя это не точно =) ) -->
         <section>
-            <h2>Поиск гостиниц в Седоне</h2>
+            <h2 class="visually-hidden">Поиск гостиниц в Седоне</h2>
             <div>
                 <p>Заинтересовались?</p>
                 <p>Укажите предполагаемые даты поездки, <br> И мы покажем вам лучшие предложения гостиниц в Седоне</p>
@@ -118,6 +118,7 @@
         <!-- Блок с картой оберну в div -->
         <div>
             <!-- Будущая карта -->
+            <img src="img/map.png" width="1200" height="594" alt="Карта города Седоны">
         </div>
 
     </main>
@@ -134,6 +135,35 @@
             <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.png" width="115" height="41" alt="Логотип HTML Academy"></a>
         </div>
     </footer>
+
+    <section>
+        <h2 class="visually-hidden">Форма поиска Гостиницы</h2>
+        <form action="https://echo.htmlacademy.ru" method="POST">
+            <p>
+                <label for="date-arrival">Дата заезда:</label>
+                <!-- иконку календаря реализую на следующем этапе -->
+                <input id="date-arrival" type="date" name="date-arrival" value="" placeholder="24 апреля 2017">
+            </p>
+            <p>
+                <label for="date-departure">Дата выезда:</label>
+                <!-- иконку календаря реализую на следующем этапе -->
+                <input id="date-departure" type="date" name="date-departure" value="" placeholder="4 июля 2017">
+            </p>
+            <p>
+                <label for="adult-count">Взрослые:</label>
+                <button type="button" aria-label="Убавить количество">-</button>
+                <input id="adult-count" type="number" name="adult-count" value="2">
+                <button type="button" aria-label="Прибавить количество">+</button>
+            </p>
+            <p>
+                <label for="children-count">Дети:</label>
+                <button type="button" aria-label="Убавить количество">-</button>
+                <input id="children-count" type="number" name="children-count" value="0">
+                <button type="button" aria-label="Прибавить количество">+</button>
+            </p>
+            <a href="#">Найти</a>
+        </form>
+    </section>
 
 </body>
 
