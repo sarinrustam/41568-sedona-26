@@ -25,6 +25,57 @@
         <h1 class="visually-hidden">Каталог отелей</h1>
         <div>
             <!-- Блок с будущей формой поиска -->
+            <form action="https://echo.htmlacademy.ru" method="POST">
+                <fieldset>
+                    <legend>Инфраструктура:</legend>
+                    <ul>
+                        <li>
+                            <input id="filter-pool" type="checkbox" name="pool" value="" checked>
+                            <label for="filter-pool">Бассейн</label>
+                        </li>
+                        <li>
+                            <input id="filter-parking" type="checkbox" name="parking" value="">
+                            <label for="filter-parking">Парковка</label>
+                        </li>
+                        <li>
+                            <input id="filter-wifi" type="checkbox" name="wifi" value="">
+                            <label for="filter-wifi">WI-FI</label>
+                        </li>
+                    </ul>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Тип жилья</legend>
+                    <ul>
+                        <li>
+                            <input id="filter-hotel" type="checkbox" name="hotel" value="" checked>
+                            <label for="filter-hotel">Гостиница</label>
+                        </li>
+                        <li>
+                            <input id="filter-motel" type="checkbox" name="motel" value="" checked>
+                            <label for="filter-motel">Мотель</label>
+                        </li>
+                        <li>
+                            <input id="filter-apartment" type="checkbox" name="apartment" value="" checked>
+                            <label for="filter-apartment">Апартаменты</label>
+                        </li>
+                    </ul>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Стоимость в сутки (Р):</legend>
+                    <!-- Блок реалицую при помощи javascript на следющем этапе -->
+                    <p>
+                        от 0
+                    </p>
+                    <p>
+                        до 3000
+                    </p>
+                    <input type="range" min="0" step="10">
+                    <button type="submit">Показать</button>
+                </fieldset>
+
+            </form>
         </div>
         <!-- Блок с результатами поиска решил обернуть в div, потому что ..., затем каждый найденный
         отель можно тоже обернуть в отдельный div для будущей стилизации -->
