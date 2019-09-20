@@ -4,39 +4,39 @@
 <head>
     <meta charset="utf-8">
     <title>Welcome ot Sedona</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="./node_modules/normalize.css/normalize.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
 </head>
 
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="information.html">Информация</a></li>
-                <li><a href="media.html">Фото и видео</a></li>
-                <li><a href="map.html">Карта штата</a></li>
-                <li><a href="catalog.html">Гостиницы</a></li>
+    <header class="header">
+        <nav class="header__nav">
+            <ul class="header__list">
+                <li class="header__item header__item--current"><a class="header__link" href="information.html">Информация</a></li>
+                <li class="header__item"><a href="media.html">Фото и видео</a></li>
+                <li class="header__item"><a href="map.html">Карта штата</a></li>
+                <li class="header__item"><a href="catalog.html">Гостиницы</a></li>
             </ul>
-            <a href="index.html">
-                <img src="img/logo.svg" width="138" height="71" alt="Логотип Седоны">
+            <a class="header__logo logo" href="index.html">
+                <img class="logo__image" src="img/logo.svg" width="138" height="71" alt="Логотип Седоны">
             </a>
         </nav>
     </header>
 
-    <main>
+    <main class="container">
         <h1 class="visually-hidden">Город Седона</h1>
 
-        <section>
+        <section class="intro">
             <h2 class="visually-hidden">Приветсвие</h2>
-            <!-- <img src="img/intro-background.png" width="1200" height="800" alt="Фон приветствия"> -->
             <img src="img/intro-welcome.svg" width="458" height="352" alt="Приветсвтие">
         </section>
-        <!-- Весь контент обернуть в секцию "5 причин", затем каждую причину можно будет обернуть в div,
-  а раздел рекомендаций можно будет обернуть в секцию -->
-        <section>
+
+        <section class="benefits">
             <h2 class="visually-hidden">5 преимуществ Седоны</h2>
-            <!-- блок с текстом, выбрал блок div, потому что не получится по смыслу вырвать из контекста -->
             <div>
-                <p>Седона - небольшой городок в Аризоне, <br> заслуживающий большего!</p>
-                <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+                <p class="benefits__title">Седона - небольшой городок в Аризоне, <br> заслуживающий большего!</p>
+                <p class="benefits__desc">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
             </div>
             <!-- Причина № 1 -->
             <section>
@@ -98,63 +98,74 @@
                 </li>
             </ul>
         </section>
-        <!-- Решил обернуть в section, потому что можно вырвать из контекста(хотя это не точно =) ) -->
-        <section>
+
+        <section class="searching">
             <h2 class="visually-hidden">Поиск гостиниц в Седоне</h2>
             <div>
-                <p>Заинтересовались?</p>
-                <p>Укажите предполагаемые даты поездки, <br> И мы покажем вам лучшие предложения гостиниц в Седоне</p>
+                <p class="searching__title">Заинтересовались?</p>
+                <p class="searching__desc">Укажите предполагаемые даты поездки, <br> И мы покажем вам лучшие предложения гостиниц в Седоне</p>
             </div>
-            <button type="button">Поиск гостиницы в Седоне</button>
+            <button class="searching__button button button--brown" type="button">Поиск гостиницы в Седоне</button>
         </section>
 
-        <!-- Блок с картой оберну в div -->
-        <div>
-            <!-- Будущая карта -->
-            <img src="img/map.png" width="1200" height="594" alt="Карта города Седоны">
+
+        <div class="map">
+            <img class="map__image" src="img/map.png" width="1200" height="594" alt="Карта города Седоны">
         </div>
 
     </main>
 
-    <footer>
-        <p>#VISITSEDONA</p>
-        <ul>
-            <li><a href="#">twitter</a></li>
-            <li><a href="#">facebook</a></li>
-            <li><a href="#">youtube</a></li>
+    <footer class="footer">
+        <p class="footer__tag">#VISITSEDONA</p>
+        <ul class="footer__list">
+            <li class="footer__item">
+                <a class="footer__link footer__link--twitter" href="#"></a>
+            </li>
+            <li class="footer__item">
+                <a class="footer__link footer__link--facebook" href="#"></a>
+            </li>
+            <li class="footer__item">
+                <a class="footer__link footer__link--youtube" href="#"></a>
+            </li>
         </ul>
-        <div>
-            <p>WEBSITE BY</p>
-            <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.png" width="115" height="41" alt="Логотип HTML Academy"></a>
+        <div class="footer__copyright copyright">
+            <p class="copyright__title">WEBSITE BY</p>
+            <a class="copyright__link" href="https://htmlacademy.ru/intensive/htmlcss"><img class="copyright__image" src="img/logo-htmlacademy.png" width="115" height="41" alt="Логотип HTML Academy"></a>
         </div>
     </footer>
 
-    <section>
+    <!--  -->
+    <!--  -->
+    <section class="searching-form">
         <h2 class="visually-hidden">Форма поиска Гостиницы</h2>
-        <form action="https://echo.htmlacademy.ru" method="POST">
-            <p>
-                <label for="date-arrival">Дата заезда:</label>
+        <form class="searching-form__form" action="https://echo.htmlacademy.ru" method="POST">
+            <p class="searching-form__row">
+                <label class="searching-form__label" for="date-arrival">Дата заезда:</label>
                 <!-- иконку календаря реализую на следующем этапе -->
-                <input id="date-arrival" type="date" name="date-arrival" value="" placeholder="24 апреля 2017">
+                <input class="searching-form__input" id="date-arrival" type="date" name="date-arrival" value="" placeholder="24 апреля 2017">
             </p>
-            <p>
-                <label for="date-departure">Дата выезда:</label>
+            <p class="searching-form__row">
+                <label class="searching-form__label" for="date-departure">Дата выезда:</label>
                 <!-- иконку календаря реализую на следующем этапе -->
-                <input id="date-departure" type="date" name="date-departure" value="" placeholder="4 июля 2017">
+                <input class="searching-form__input" id="date-departure" type="date" name="date-departure" value="" placeholder="4 июля 2017">
             </p>
-            <p>
-                <label for="adult-count">Взрослые:</label>
-                <button type="button" aria-label="Убавить количество">-</button>
-                <input id="adult-count" type="number" name="adult-count" value="2">
-                <button type="button" aria-label="Прибавить количество">+</button>
+            <p class="searching-form__row">
+                <label class="searching-form__label" for="adult-count">Взрослые:</label>
+                <div class="searching-form__count count">
+                    <button class="count__button count__button--minus" type="button" aria-label="Убавить количество">-</button>
+                    <input class="count__input" id="adult-count" type="number" name="adult-count" value="2">
+                    <button class="count__button count__button--plus" type="button" aria-label="Прибавить количество">+</button>
+                </div>
             </p>
-            <p>
-                <label for="children-count">Дети:</label>
-                <button type="button" aria-label="Убавить количество">-</button>
-                <input id="children-count" type="number" name="children-count" value="0">
-                <button type="button" aria-label="Прибавить количество">+</button>
+            <p class="searching-form__row">
+                <label class="searching-form__label" for="children-count">Дети:</label>
+                <div class="searching-form__count count">
+                    <button class="count__button count__button--minus" type="button" aria-label="Убавить количество">-</button>
+                    <input class="count__input" id="children-count" type="number" name="children-count" value="0">
+                    <button class="count__button count__button--plus" type="button" aria-label="Прибавить количество">+</button>
+                </div>
             </p>
-            <button type="button">Найти</button>
+            <button class="searching-form__button button" type="button">Найти</button>
         </form>
     </section>
 
