@@ -59,6 +59,7 @@ a {
 
 .intro {
     background-image: url("../img/intro-background.png");
+    background-repeat: no-repeat;
 }
 
 
@@ -72,6 +73,56 @@ a {
 }
 
 .benefits__desc {
+    font-weight: 400;
+    text-align: center;
+    color: #333333;
+}
+
+
+/* REASONS */
+
+.benefits-reason--title {
+    font-size: 21px;
+    line-height: 21px;
+    font-weight: bold;
+    text-align: center;
+    color: #ffffff;
+}
+
+.benefits-reason--subtitle,
+.benefits-reason--desc {
+    font-size: 14px;
+    line-height: 21px;
+    color: #ffffff;
+    font-weight: 400;
+    text-align: center;
+}
+
+.benefits-reason {
+    background-color: #81B3D2;
+}
+
+.benefits-reason--background {
+    background-image: url("../img/reason-one-background.jpg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+}
+
+.advice,
+.benefits-reasons {
+    list-style: none;
+}
+
+.advice__title {
+    font-size: 21px;
+    line-height: 21px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.advice__text {
+    font-size: 14px;
+    line-height: 21px;
     font-weight: 400;
     text-align: center;
     color: #333333;
@@ -95,6 +146,15 @@ a {
     font-size: 21px;
     line-height: 26px;
     text-align: center;
+}
+
+.searching__button:hover {
+    background-color: #604E43;
+}
+
+.searching__button:active {
+    background-color: #503E33;
+    color: rgba(255, 255, 255, 0.3);
 }
 
 .footer__tag {
@@ -152,4 +212,39 @@ a {
     line-height: 26px;
     text-align: center;
     font-weight: bold;
+}
+
+.searching-form__button:hover {
+    background-color: #669EC0;
+}
+
+.searching-form__button:active {
+    background-color: #5496BD;
+    color: rgba(255, 255, 255, 0.3)
+}
+
+.searching-form__input {
+    font: inherit;
+    font-weight: bold;
+    background-color: #f2f2f2;
+}
+
+.searching-form__input:hover {
+    background-color: #ebebeb;
+}
+
+.searching-form__input:focus {
+    background-color: #ffffff;
+    border: 2px solid #e5e5e5;
+}
+
+.searching-form__input::placeholder {
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: bold;
+}
+
+.count__button,
+.count__input {
+    background-color: #f2f2f2;
 }

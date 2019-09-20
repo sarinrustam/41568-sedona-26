@@ -39,61 +39,60 @@
                 <p class="benefits__desc">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
             </div>
             <!-- Причина № 1 -->
-            <section>
+            <section class="benefits-reason benefits-reason--first">
                 <h3 class="visually-hidden">Первое преимущество</h3>
-                <h4>Настоящий городок</h4>
-                <p>— №1 —</p>
-                <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-                <div>
+                <h4 class="benefits-reason--title">Настоящий городок</h4>
+                <p class="benefits-reason--subtitle">— №1 —</p>
+                <p class="benefits-reason--desc">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+                <div class="benefits-reason--background">
                     <!-- блок с будущим бэкграундом, реализую его через бэкграунд-->
                 </div>
             </section>
-            <!-- Советы для туристов, использую section, потому что этот блок можно выдернуть из контекста -->
-            <ul>
-                <li>
-                    <img src="img/icon-home.svg" width="75" height="72" alt="иконка домика">
-                    <h4>Жилье</h4>
-                    <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+
+            <ul class="advice">
+                <li class="advice__item">
+                    <img class="advice__image" src="img/icon-home.svg" width="75" height="72" alt="иконка домика">
+                    <h4 class="advice__title">Жилье</h4>
+                    <p class="advice__text">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
                 </li>
-                <li>
-                    <img src="img/icon-burger.svg" width="75" height="70" alt="иконка бургера">
-                    <h4>Еда</h4>
-                    <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+                <li class="advice__item">
+                    <img class="advice__image" src="img/icon-burger.svg" width="75" height="70" alt="иконка бургера">
+                    <h4 class="advice__title">Еда</h4>
+                    <p class="advice__text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
                 </li>
-                <li>
-                    <img src="img/icon-gift.svg" width="64" height="77" alt="иконка сувениров">
-                    <h4>Сувениры</h4>
-                    <p>Не только китайского, но и местного производства!</p>
+                <li class="advice__item">
+                    <img class="advice__image" src="img/icon-gift.svg" width="64" height="77" alt="иконка сувениров">
+                    <h4 class="advice__title">Сувениры</h4>
+                    <p class="advice__text">Не только китайского, но и местного производства!</p>
                 </li>
             </ul>
             <!-- Причина №2 -->
-            <section>
+            <section class="benefits-reason benefits-reason--second">
                 <h3 class="visually-hidden">Второе преимущество</h3>
-                <section>
-                    <h4>Там есть мост дьявола</h4>
-                    <p>— №2 —</p>
-                    <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
-                </section>
-                <div>
+                <h4 class="benefits-reason--title">Там есть мост дьявола</h4>
+                <p class="benefits-reason--subtitle">— №2 —</p>
+                <p class="benefits-reason--desc">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+
+                <div class="benefits-reason--background">
                     <!-- Блок с будущим бэкграундом, картинку реализую через бэкграунд -->
                 </div>
             </section>
-            <ul>
-                <li>
-                    <h4>Небольшая площадь</h4>
-                    <p>— №3 —</p>
-                    <p>Все достопримечательности находятся очень близко</p>
+            <ul class="benefits-reasons">
+                <li class="benefits-reasons__item">
+                    <h4 class="benefits-reasons__title">Небольшая площадь</h4>
+                    <p class="benefits-reasons__subtitle">— №3 —</p>
+                    <p class="benefits-reasons__desc">Все достопримечательности находятся очень близко</p>
 
                 </li>
-                <li>
-                    <h4>Красивая дорога</h4>
-                    <p>— №4 —</p>
-                    <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+                <li class="benefits-reasons__item">
+                    <h4 class="benefits-reasons__title">Красивая дорога</h4>
+                    <p class="benefits-reasons__subtitle">— №4 —</p>
+                    <p class="benefits-reasons__desc">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
                 </li>
-                <li>
-                    <h4>Мало туристов</h4>
-                    <p>— №5 —</p>
-                    <p>Большинство едет в гранд каньон и толпится там</p>
+                <li class="benefits-reasons__item">
+                    <h4 class="benefits-reasons__title">Мало туристов</h4>
+                    <p class="benefits-reasons__subtitle">— №5 —</p>
+                    <p class="benefits-reasons__desc">Большинство едет в гранд каньон и толпится там</p>
 
                 </li>
             </ul>
@@ -142,12 +141,12 @@
             <p class="searching-form__row">
                 <label class="searching-form__label" for="date-arrival">Дата заезда:</label>
                 <!-- иконку календаря реализую на следующем этапе -->
-                <input class="searching-form__input" id="date-arrival" type="date" name="date-arrival" value="" placeholder="24 апреля 2017">
+                <input class="searching-form__input" id="date-arrival" type="text" name="date-arrival" value="" placeholder="24 апреля 2017">
             </p>
             <p class="searching-form__row">
                 <label class="searching-form__label" for="date-departure">Дата выезда:</label>
                 <!-- иконку календаря реализую на следующем этапе -->
-                <input class="searching-form__input" id="date-departure" type="date" name="date-departure" value="" placeholder="4 июля 2017">
+                <input class="searching-form__input" id="date-departure" type="text" name="date-departure" value="" placeholder="4 июля 2017">
             </p>
             <p class="searching-form__row">
                 <label class="searching-form__label" for="adult-count">Взрослые:</label>
