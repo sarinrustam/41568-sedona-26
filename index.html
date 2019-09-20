@@ -12,7 +12,7 @@
 <body>
     <header class="header">
         <nav class="header__nav">
-            <ul class="header__list">
+            <ul class="header__list list">
                 <li class="header__item header__item--current"><a class="header__link" href="information.html">Информация</a></li>
                 <li class="header__item"><a href="media.html">Фото и видео</a></li>
                 <li class="header__item"><a href="map.html">Карта штата</a></li>
@@ -40,16 +40,20 @@
             </div>
             <!-- Причина № 1 -->
             <section class="benefits-reason benefits-reason--first">
-                <h3 class="visually-hidden">Первое преимущество</h3>
-                <h4 class="benefits-reason--title">Настоящий городок</h4>
-                <p class="benefits-reason--subtitle">— №1 —</p>
-                <p class="benefits-reason--desc">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-                <div class="benefits-reason--background">
+                <div class="benefits-reason__inner">
+                    <h3 class="visually-hidden">Первое преимущество</h3>
+                    <h4 class="benefits-reason__title">Настоящий городок</h4>
+                    <p class="benefits-reason__subtitle">— №1 —</p>
+                    <p class="benefits-reason__desc">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+                </div>
+
+                <div class="benefits-reason__background">
                     <!-- блок с будущим бэкграундом, реализую его через бэкграунд-->
                 </div>
+
             </section>
 
-            <ul class="advice">
+            <ul class="advice list">
                 <li class="advice__item">
                     <img class="advice__image" src="img/icon-home.svg" width="75" height="72" alt="иконка домика">
                     <h4 class="advice__title">Жилье</h4>
@@ -69,15 +73,15 @@
             <!-- Причина №2 -->
             <section class="benefits-reason benefits-reason--second">
                 <h3 class="visually-hidden">Второе преимущество</h3>
-                <h4 class="benefits-reason--title">Там есть мост дьявола</h4>
-                <p class="benefits-reason--subtitle">— №2 —</p>
-                <p class="benefits-reason--desc">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+                <h4 class="benefits-reason__title">Там есть мост дьявола</h4>
+                <p class="benefits-reason__subtitle">— №2 —</p>
+                <p class="benefits-reason__desc">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
 
-                <div class="benefits-reason--background">
+                <div class="benefits-reason__background">
                     <!-- Блок с будущим бэкграундом, картинку реализую через бэкграунд -->
                 </div>
             </section>
-            <ul class="benefits-reasons">
+            <ul class="benefits-reasons list">
                 <li class="benefits-reasons__item">
                     <h4 class="benefits-reasons__title">Небольшая площадь</h4>
                     <p class="benefits-reasons__subtitle">— №3 —</p>
@@ -116,7 +120,7 @@
 
     <footer class="footer">
         <p class="footer__tag">#VISITSEDONA</p>
-        <ul class="footer__list">
+        <ul class="footer__list list">
             <li class="footer__item">
                 <a class="footer__link footer__link--twitter" href="#"></a>
             </li>
