@@ -7,171 +7,173 @@
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link href="./node_modules/normalize.css/normalize.css" rel="stylesheet">
     <link href="./css/style.css" rel="stylesheet">
+    <link href="./css/outline.css" rel="stylesheet">
 </head>
 
-<body>
-    <header class="header">
-        <nav class="header__nav">
-            <ul class="header__list list">
-                <li class="header__item header__item--current"><a class="header__link" href="information.html">Информация</a></li>
-                <li class="header__item"><a href="media.html">Фото и видео</a></li>
-                <li class="header__item"><a href="map.html">Карта штата</a></li>
-                <li class="header__item"><a href="catalog.html">Гостиницы</a></li>
-            </ul>
-            <a class="header__logo logo" href="index.html">
-                <img class="logo__image" src="img/logo.svg" width="138" height="71" alt="Логотип Седоны">
-            </a>
-        </nav>
-    </header>
+<body class="page">
+    <div class="page__container">
+        <header class="header">
+            <nav class="header__nav">
+                <ul class="header__list list">
+                    <li class="header__item header__item--current"><a class="header__link" href="information.html">Информация</a></li>
+                    <li class="header__item"><a href="media.html">Фото и видео</a></li>
+                    <li class="header__item"><a href="map.html">Карта штата</a></li>
+                    <li class="header__item"><a href="catalog.html">Гостиницы</a></li>
+                </ul>
+                <a class="header__logo logo" href="index.html">
+                    <img class="logo__image" src="img/logo.svg" width="138" height="71" alt="Логотип Седоны">
+                </a>
+            </nav>
+        </header>
 
-    <main class="container">
-        <h1 class="visually-hidden">Город Седона</h1>
-
-        <section class="intro">
-            <h2 class="visually-hidden">Приветсвие</h2>
-            <img src="img/intro-welcome.svg" width="458" height="352" alt="Приветсвтие">
-        </section>
-
-        <section class="benefits">
-            <h2 class="visually-hidden">5 преимуществ Седоны</h2>
-            <div>
-                <p class="benefits__title">Седона - небольшой городок в Аризоне, <br> заслуживающий большего!</p>
-                <p class="benefits__desc">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
-            </div>
-            <!-- Причина № 1 -->
-            <section class="benefits-reason benefits-reason--first">
-                <div class="benefits-reason__inner">
-                    <h3 class="visually-hidden">Первое преимущество</h3>
-                    <h4 class="benefits-reason__title">Настоящий городок</h4>
-                    <p class="benefits-reason__subtitle">— №1 —</p>
-                    <p class="benefits-reason__desc">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-                </div>
-
-                <div class="benefits-reason__background">
-                    <!-- блок с будущим бэкграундом, реализую его через бэкграунд-->
-                </div>
-
+        <main class="container">
+            <h1 class="visually-hidden">Город Седона</h1>
+            <section class="intro">
+                <h2 class="visually-hidden">Приветсвие</h2>
+                <img class="intro__image" src="img/intro-welcome.svg" width="458" height="352" alt="Приветсвтие">
             </section>
 
-            <ul class="advice list">
-                <li class="advice__item">
-                    <img class="advice__image" src="img/icon-home.svg" width="75" height="72" alt="иконка домика">
-                    <h4 class="advice__title">Жилье</h4>
-                    <p class="advice__text">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
-                </li>
-                <li class="advice__item">
-                    <img class="advice__image" src="img/icon-burger.svg" width="75" height="70" alt="иконка бургера">
-                    <h4 class="advice__title">Еда</h4>
-                    <p class="advice__text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-                </li>
-                <li class="advice__item">
-                    <img class="advice__image" src="img/icon-gift.svg" width="64" height="77" alt="иконка сувениров">
-                    <h4 class="advice__title">Сувениры</h4>
-                    <p class="advice__text">Не только китайского, но и местного производства!</p>
-                </li>
-            </ul>
-            <!-- Причина №2 -->
-            <section class="benefits-reason benefits-reason--second">
-                <h3 class="visually-hidden">Второе преимущество</h3>
-                <h4 class="benefits-reason__title">Там есть мост дьявола</h4>
-                <p class="benefits-reason__subtitle">— №2 —</p>
-                <p class="benefits-reason__desc">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
-
-                <div class="benefits-reason__background">
-                    <!-- Блок с будущим бэкграундом, картинку реализую через бэкграунд -->
+            <section class="benefits">
+                <h2 class="visually-hidden">5 преимуществ Седоны</h2>
+                <div class="benefits__wrapper">
+                    <p class="benefits__title">Седона - небольшой городок в Аризоне, <br> заслуживающий большего!</p>
+                    <p class="benefits__desc">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
                 </div>
+
+                <section class="benefits-reason benefits-reason--first">
+                    <div class="benefits-reason__inner">
+                        <h3 class="visually-hidden">Первое преимущество</h3>
+                        <h4 class="benefits-reason__title">Настоящий городок</h4>
+                        <p class="benefits-reason__subtitle">— №1 —</p>
+                        <p class="benefits-reason__desc">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+                    </div>
+
+                    <div class="benefits-reason__background">
+                        <!-- блок с будущим бэкграундом, реализую его через бэкграунд-->
+                    </div>
+
+                </section>
+
+                <ul class="advice list">
+                    <li class="advice__item">
+                        <img class="advice__image" src="img/icon-home.svg" width="75" height="72" alt="иконка домика">
+                        <h4 class="advice__title">Жилье</h4>
+                        <p class="advice__text">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+                    </li>
+                    <li class="advice__item">
+                        <img class="advice__image" src="img/icon-burger.svg" width="75" height="70" alt="иконка бургера">
+                        <h4 class="advice__title">Еда</h4>
+                        <p class="advice__text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+                    </li>
+                    <li class="advice__item">
+                        <img class="advice__image" src="img/icon-gift.svg" width="64" height="77" alt="иконка сувениров">
+                        <h4 class="advice__title">Сувениры</h4>
+                        <p class="advice__text">Не только китайского, но и местного производства!</p>
+                    </li>
+                </ul>
+                <!-- Причина №2 -->
+                <section class="benefits-reason benefits-reason--second">
+                    <div class="benefits-reason__inner">
+                        <h3 class="visually-hidden">Второе преимущество</h3>
+                        <h4 class="benefits-reason__title">Там есть мост дьявола</h4>
+                        <p class="benefits-reason__subtitle">— №2 —</p>
+                        <p class="benefits-reason__desc">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+                    </div>
+                    <div class="benefits-reason__background">
+                        <!-- Блок с будущим бэкграундом, картинку реализую через бэкграунд -->
+                    </div>
+                </section>
+                <ul class="benefits-reasons list">
+                    <li class="benefits-reasons__item">
+                        <h4 class="benefits-reasons__title">Небольшая площадь</h4>
+                        <p class="benefits-reasons__subtitle">— №3 —</p>
+                        <p class="benefits-reasons__desc">Все достопримечательности<br> находятся очень близко</p>
+
+                    </li>
+                    <li class="benefits-reasons__item">
+                        <h4 class="benefits-reasons__title">Красивая дорога</h4>
+                        <p class="benefits-reasons__subtitle">— №4 —</p>
+                        <p class="benefits-reasons__desc">Ехать в Седону из Лас-Вегаса совсем<br> не скучно!</p>
+                    </li>
+                    <li class="benefits-reasons__item">
+                        <h4 class="benefits-reasons__title">Мало туристов</h4>
+                        <p class="benefits-reasons__subtitle">— №5 —</p>
+                        <p class="benefits-reasons__desc">Большинство едет в гранд каньон<br> и толпится там</p>
+
+                    </li>
+                </ul>
             </section>
-            <ul class="benefits-reasons list">
-                <li class="benefits-reasons__item">
-                    <h4 class="benefits-reasons__title">Небольшая площадь</h4>
-                    <p class="benefits-reasons__subtitle">— №3 —</p>
-                    <p class="benefits-reasons__desc">Все достопримечательности находятся очень близко</p>
 
-                </li>
-                <li class="benefits-reasons__item">
-                    <h4 class="benefits-reasons__title">Красивая дорога</h4>
-                    <p class="benefits-reasons__subtitle">— №4 —</p>
-                    <p class="benefits-reasons__desc">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-                </li>
-                <li class="benefits-reasons__item">
-                    <h4 class="benefits-reasons__title">Мало туристов</h4>
-                    <p class="benefits-reasons__subtitle">— №5 —</p>
-                    <p class="benefits-reasons__desc">Большинство едет в гранд каньон и толпится там</p>
+            <section class="searching">
+                <h2 class="visually-hidden">Поиск гостиниц в Седоне</h2>
+                <div class="searching__wrapper">
+                    <p class="searching__title">Заинтересовались?</p>
+                    <p class="searching__desc">Укажите предполагаемые даты поездки, <br> И мы покажем вам лучшие предложения гостиниц в Седоне</p>
+                </div>
+                <button class="searching__button button button--brown" type="button">Поиск гостиницы в Седоне</button>
+            </section>
 
+
+            <div class="map">
+                <img class="map__image" src="img/map.png" width="1200" height="594" alt="Карта города Седоны">
+            </div>
+
+        </main>
+
+        <footer class="footer">
+            <p class="footer__tag">#VISITSEDONA</p>
+            <ul class="footer__list list">
+                <li class="footer__item">
+                    <a class="footer__link footer__link--twitter" href="#"></a>
+                </li>
+                <li class="footer__item">
+                    <a class="footer__link footer__link--facebook" href="#"></a>
+                </li>
+                <li class="footer__item">
+                    <a class="footer__link footer__link--youtube" href="#"></a>
                 </li>
             </ul>
-        </section>
-
-        <section class="searching">
-            <h2 class="visually-hidden">Поиск гостиниц в Седоне</h2>
-            <div>
-                <p class="searching__title">Заинтересовались?</p>
-                <p class="searching__desc">Укажите предполагаемые даты поездки, <br> И мы покажем вам лучшие предложения гостиниц в Седоне</p>
+            <div class="footer__copyright copyright">
+                <p class="copyright__title">WEBSITE BY</p>
+                <a class="copyright__link" href="https://htmlacademy.ru/intensive/htmlcss"><img class="copyright__image" src="img/logo-htmlacademy.png" width="115" height="41" alt="Логотип HTML Academy"></a>
             </div>
-            <button class="searching__button button button--brown" type="button">Поиск гостиницы в Седоне</button>
+        </footer>
+
+        <!--  -->
+        <!--  -->
+        <section class="searching-form visually-hidden">
+            <h2 class="visually-hidden">Форма поиска Гостиницы</h2>
+            <form class="searching-form__form" action="https://echo.htmlacademy.ru" method="POST">
+                <p class="searching-form__row">
+                    <label class="searching-form__label" for="date-arrival">Дата заезда:</label>
+                    <!-- иконку календаря реализую на следующем этапе -->
+                    <input class="searching-form__input" id="date-arrival" type="text" name="date-arrival" value="" placeholder="24 апреля 2017">
+                </p>
+                <p class="searching-form__row">
+                    <label class="searching-form__label" for="date-departure">Дата выезда:</label>
+                    <!-- иконку календаря реализую на следующем этапе -->
+                    <input class="searching-form__input" id="date-departure" type="text" name="date-departure" value="" placeholder="4 июля 2017">
+                </p>
+                <p class="searching-form__row">
+                    <label class="searching-form__label" for="adult-count">Взрослые:</label>
+                    <div class="searching-form__count count">
+                        <button class="count__button count__button--minus" type="button" aria-label="Убавить количество">-</button>
+                        <input class="count__input" id="adult-count" type="number" name="adult-count" value="2">
+                        <button class="count__button count__button--plus" type="button" aria-label="Прибавить количество">+</button>
+                    </div>
+                </p>
+                <p class="searching-form__row">
+                    <label class="searching-form__label" for="children-count">Дети:</label>
+                    <div class="searching-form__count count">
+                        <button class="count__button count__button--minus" type="button" aria-label="Убавить количество">-</button>
+                        <input class="count__input" id="children-count" type="number" name="children-count" value="0">
+                        <button class="count__button count__button--plus" type="button" aria-label="Прибавить количество">+</button>
+                    </div>
+                </p>
+                <button class="searching-form__button button" type="button">Найти</button>
+            </form>
         </section>
-
-
-        <div class="map">
-            <img class="map__image" src="img/map.png" width="1200" height="594" alt="Карта города Седоны">
-        </div>
-
-    </main>
-
-    <footer class="footer">
-        <p class="footer__tag">#VISITSEDONA</p>
-        <ul class="footer__list list">
-            <li class="footer__item">
-                <a class="footer__link footer__link--twitter" href="#"></a>
-            </li>
-            <li class="footer__item">
-                <a class="footer__link footer__link--facebook" href="#"></a>
-            </li>
-            <li class="footer__item">
-                <a class="footer__link footer__link--youtube" href="#"></a>
-            </li>
-        </ul>
-        <div class="footer__copyright copyright">
-            <p class="copyright__title">WEBSITE BY</p>
-            <a class="copyright__link" href="https://htmlacademy.ru/intensive/htmlcss"><img class="copyright__image" src="img/logo-htmlacademy.png" width="115" height="41" alt="Логотип HTML Academy"></a>
-        </div>
-    </footer>
-
-    <!--  -->
-    <!--  -->
-    <section class="searching-form">
-        <h2 class="visually-hidden">Форма поиска Гостиницы</h2>
-        <form class="searching-form__form" action="https://echo.htmlacademy.ru" method="POST">
-            <p class="searching-form__row">
-                <label class="searching-form__label" for="date-arrival">Дата заезда:</label>
-                <!-- иконку календаря реализую на следующем этапе -->
-                <input class="searching-form__input" id="date-arrival" type="text" name="date-arrival" value="" placeholder="24 апреля 2017">
-            </p>
-            <p class="searching-form__row">
-                <label class="searching-form__label" for="date-departure">Дата выезда:</label>
-                <!-- иконку календаря реализую на следующем этапе -->
-                <input class="searching-form__input" id="date-departure" type="text" name="date-departure" value="" placeholder="4 июля 2017">
-            </p>
-            <p class="searching-form__row">
-                <label class="searching-form__label" for="adult-count">Взрослые:</label>
-                <div class="searching-form__count count">
-                    <button class="count__button count__button--minus" type="button" aria-label="Убавить количество">-</button>
-                    <input class="count__input" id="adult-count" type="number" name="adult-count" value="2">
-                    <button class="count__button count__button--plus" type="button" aria-label="Прибавить количество">+</button>
-                </div>
-            </p>
-            <p class="searching-form__row">
-                <label class="searching-form__label" for="children-count">Дети:</label>
-                <div class="searching-form__count count">
-                    <button class="count__button count__button--minus" type="button" aria-label="Убавить количество">-</button>
-                    <input class="count__input" id="children-count" type="number" name="children-count" value="0">
-                    <button class="count__button count__button--plus" type="button" aria-label="Прибавить количество">+</button>
-                </div>
-            </p>
-            <button class="searching-form__button button" type="button">Найти</button>
-        </form>
-    </section>
-
+    </div>
 </body>
 
 </html>

@@ -6,12 +6,29 @@ body {
     line-height: 26px;
     color: #000000;
     text-transform: uppercase;
-    background-color: #ffffff;
-    background-image: url("../img/white-background.jpg");
 }
 
 a {
     text-decoration: none;
+}
+
+.page {
+    background-color: #f2f2f2;
+}
+
+.page__container {
+    margin: 0 auto;
+    background-color: #ffffff;
+    box-shadow: 0px 5px 15px 0 rgba(0, 1, 1, 0.2);
+    width: 1200px;
+}
+
+.visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
 }
 
 .list {
@@ -58,8 +75,6 @@ a {
     font-weight: bold;
 }
 
-.header__list {}
-
 .header__list a {
     color: #000000;
 }
@@ -78,8 +93,9 @@ a {
 }
 
 .intro {
-    background-image: url("../img/intro-background.png");
-    background-repeat: no-repeat;
+    /* Это просто бэкграунд */
+    min-height: 509px;
+    background: url("../img/intro-mask.svg") 0 100% no-repeat, url("../img/intro-background.png") 0 0 no-repeat;
 }
 
 
@@ -128,10 +144,6 @@ a {
     background-repeat: no-repeat;
 }
 
-.advice {}
-
-.benefits-reasons {}
-
 .advice__title {
     font-size: 21px;
     line-height: 21px;
@@ -172,8 +184,6 @@ a {
     text-align: center;
     font-weight: bold;
 }
-
-.footer__list {}
 
 .footer__item {
     background-color: #81b3d2;
@@ -363,4 +373,129 @@ a {
     font-weight: 400;
     text-align: center;
     color: #666666;
+}
+
+
+/*  */
+
+
+/* Styles for flexbox */
+
+.header__nav {
+    position: relative;
+}
+
+.header__list {
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.header__item {
+    width: 239px;
+}
+
+.header__item:nth-child(3) {
+    margin-left: auto;
+}
+
+.header__logo {
+    position: absolute;
+    left: 530px;
+    top: 0;
+}
+
+.intro__image {
+    padding-top: 76px;
+    padding-left: 370px;
+}
+
+.benefits__title {
+    margin: 0;
+    padding-top: 60px;
+}
+
+.benefits__desc {
+    padding-top: 30px;
+    padding-bottom: 50px;
+    margin: 0;
+}
+
+.benefits-reason__title {
+    margin: 0;
+}
+
+.benefits-reason__inner {
+    width: 280px;
+    padding: 46px 60px 60px 60px;
+    background-color: #81b3d2;
+}
+
+.benefits-reason {
+    display: flex;
+}
+
+.benefits-reason--first .benefits-reason__background {
+    background-image: url("../img/reason-one-background.jpg");
+    /* background-position: 0 0; */
+    background-repeat: no-repeat;
+    min-height: 256px;
+    width: 800px;
+}
+
+.advice {
+    display: flex;
+    justify-content: space-between;
+}
+
+.benefits-reason--second .benefits-reason__background {
+    background-image: url("../img/reason-two-background.jpg");
+    /* background-position: 0 0; */
+    background-repeat: no-repeat;
+    min-height: 256px;
+    width: 800px;
+}
+
+.benefits-reasons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.searching {
+    text-align: center;
+}
+
+.searching__title {
+    margin-top: 55px;
+}
+
+.searching__button {
+    text-align: center;
+}
+
+.map {
+    height: 593px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__tag {
+    padding-left: 132px;
+}
+
+.footer__list {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__copyright {
+    display: flex;
+    align-items: center;
+    padding-right: 101px;
 }
