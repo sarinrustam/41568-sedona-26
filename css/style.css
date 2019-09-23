@@ -499,3 +499,64 @@ a {
     align-items: center;
     padding-right: 101px;
 }
+
+
+/* Catalog */
+
+.searching-hotels {
+    display: flex;
+}
+
+.searching-hotels__section:last-child {
+    margin-left: auto;
+}
+
+.searching-hotels {
+    min-height: 217px;
+}
+
+.sort {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sort__item {
+    margin-right: 33px;
+}
+
+.sort__button--up {
+    margin-left: auto;
+}
+
+.sort__text {
+    padding-left: 49px;
+    align-self: center;
+}
+
+.hotels__item {
+    padding: 30px 72px;
+    display: flex;
+}
+
+.hotels__row {
+    display: flex;
+}
+
+.hotels__rating {
+    margin-left: auto;
+}
+
+.hotels__title {
+    margin-top: 0;
+    margin-bottom: 11px;
+}
+
+.hotels__text {
+    margin-top: 0;
+    margin-bottom: 13px;
+}
+
+.hotels__image {
+    margin-right: 30px;
+}

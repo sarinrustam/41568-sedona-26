@@ -82,3 +82,33 @@
     background-color: rgba(66, 17, 245, 0.288);
     outline: 1px solid rgba(66, 17, 245);
 }
+
+
+/*  */
+
+
+/* Вторая страница */
+
+.searching-hotels {
+    background-color: rgba(27, 212, 42, 0.205);
+    outline: 1px solid rgba(27, 212, 42);
+}
+
+.searching-hotels__section {
+    background-color: rgba(59, 82, 160, 0.205);
+    outline: 1px solid rgba(59, 82, 160);
+}
+
+.sort {
+    background-color: rgba(241, 107, 235, 0.432);
+    outline: 1px solid rgba(241, 107, 235);
+}
+
+.sort__list {
+    display: flex;
+}
+
+.hotels__item {
+    background-color: rgba(39, 156, 192, 0.432);
+    outline: 1px solid rgba(39, 156, 192);
+}
