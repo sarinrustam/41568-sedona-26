@@ -144,7 +144,32 @@ a {
     background-repeat: no-repeat;
 }
 
+.advice__item {
+    min-height: 330px;
+}
+
+.advice__item--first {
+    background-image: url("../img/icon-home.svg");
+    background-repeat: no-repeat;
+    background-position: 90px 62px;
+    ;
+}
+
+.advice__item--second {
+    background-image: url("../img/icon-burger.svg");
+    background-repeat: no-repeat;
+    background-position: 105px 62px;
+}
+
+.advice__item--third {
+    background-image: url("../img/icon-gift.svg");
+    background-repeat: no-repeat;
+    background-position: 100px 62px;
+}
+
 .advice__title {
+    margin: 0;
+    padding-top: 161px;
     font-size: 21px;
     line-height: 21px;
     text-align: center;
@@ -435,12 +460,12 @@ a {
     display: flex;
 }
 
-.benefits-reason--first .benefits-reason__background {
+.benefits-reason--first {
     background-image: url("../img/reason-one-background.jpg");
-    /* background-position: 0 0; */
+    background-position: 400px 0;
     background-repeat: no-repeat;
     min-height: 256px;
-    width: 800px;
+    width: 1200px;
 }
 
 .advice {
@@ -448,12 +473,12 @@ a {
     justify-content: space-between;
 }
 
-.benefits-reason--second .benefits-reason__background {
+.benefits-reason--second {
     background-image: url("../img/reason-two-background.jpg");
-    /* background-position: 0 0; */
+    background-position: 400px 0;
     background-repeat: no-repeat;
     min-height: 256px;
-    width: 800px;
+    width: 1200px;
 }
 
 .benefits-reasons {
