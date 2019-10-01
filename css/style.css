@@ -575,7 +575,12 @@ input[type=number]::-webkit-outer-spin-button {
     font-weight: 400;
     text-align: left;
     color: rgba(0, 0, 0, 0.3);
-    text-decoration: underline;
+    border-bottom: 1px dotted #81b3d2;
+}
+
+.sort__item--active .sort__link {
+    color: #81B3D2;
+    border: none;
 }
 
 .sort__link:hover {
@@ -584,12 +589,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 .sort__link:active {
     color: #000000;
-    text-decoration: none;
-}
-
-.sort__item--active .sort__link {
-    color: #81B3D2;
-    text-decoration: none;
+    border: none;
 }
 
 .hotels__title {
@@ -614,6 +614,9 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .hotels__rating-current {
+    width: 110px;
+    padding: 3px 0;
+    background-color: #f2f2f2;
     font-size: 14px;
     line-height: 21px;
     font-weight: 400;
@@ -887,6 +890,10 @@ input[type=number]::-webkit-outer-spin-button {
     fill: #81B3D2;
 }
 
+.sort__button--active svg polyline {
+    fill: #81B3D2;
+}
+
 .sort__button:hover svg polyline {
     fill: #000000;
 }
@@ -941,11 +948,5 @@ input[type=number]::-webkit-outer-spin-button {
 .hotels__stars {
     display: flex;
     justify-content: flex-end;
-}
-
-.hotels__star {
-    display: block;
-    width: 18px;
-    height: 17px;
-    background: url("../img/star.svg") 0 0 no-repeat;
+    margin-bottom: 47px;
 }
