@@ -331,7 +331,7 @@ a {
 
 .searching-form__input:focus {
     background-color: #ffffff;
-    padding: 6px 0 6px 13px;
+    padding: 6px 0 6px 11px;
     border: 2px solid #e5e5e5;
     outline: none;
 }
