@@ -87,15 +87,15 @@ a {
     font-weight: bold;
     display: block;
     width: 100%;
-    padding-top: 16px;
-    padding-bottom: 16px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     color: #000000;
 }
 
 .intro {
     /* Это просто бэкграунд */
-    min-height: 509px;
-    background: url("../img/intro-mask.svg") 0 100% no-repeat, url("../img/intro-background.png") 0 0 no-repeat;
+    min-height: 508px;
+    background: url("../img/intro-mask.svg") 0 100% no-repeat, url("../img/intro-background.png") 0 -56px no-repeat;
 }
 
 
@@ -125,7 +125,15 @@ a {
     color: #ffffff;
 }
 
-.benefits-reason__subtitle,
+.benefits-reason__subtitle {
+    margin-bottom: 21px;
+    font-size: 14px;
+    line-height: 21px;
+    color: #ffffff;
+    font-weight: 400;
+    text-align: center;
+}
+
 .benefits-reason__desc {
     font-size: 14px;
     line-height: 21px;
@@ -139,7 +147,7 @@ a {
 }
 
 .benefits-reason__desc {
-    margin-bottom: 0;
+    margin: 0;
 }
 
 .benefits-reason__background {
@@ -174,13 +182,13 @@ a {
 .advice__item--third {
     background-image: url("../img/icon-gift.svg");
     background-repeat: no-repeat;
-    background-position: 162px 60px;
+    background-position: 168px 56px;
 }
 
 .advice__title {
     margin: 0;
-    margin-bottom: 27px;
-    padding-top: 161px;
+    margin-bottom: 23px;
+    padding-top: 162px;
     font-size: 21px;
     line-height: 21px;
     text-align: center;
@@ -640,6 +648,7 @@ input[type=number]::-webkit-outer-spin-button {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .header__item {
@@ -654,7 +663,8 @@ input[type=number]::-webkit-outer-spin-button {
 
 .header__logo {
     position: absolute;
-    left: 530px;
+    left: 50%;
+    transform: translateX(-50%);
     top: 0;
 }
 
@@ -669,22 +679,23 @@ input[type=number]::-webkit-outer-spin-button {
 
 .benefits__title {
     margin: 0;
-    padding-top: 60px;
+    padding-top: 61px;
 }
 
 .benefits__desc {
-    padding-top: 30px;
+    padding-top: 27px;
     padding-bottom: 50px;
     margin: 0;
 }
 
 .benefits-reason__title {
     margin: 0;
+    margin-bottom: 23px;
 }
 
 .benefits-reason__inner {
     width: 280px;
-    padding: 46px 60px 60px 60px;
+    padding: 48px 60px 59px 60px;
     background-color: #81b3d2;
 }
 
@@ -697,7 +708,6 @@ input[type=number]::-webkit-outer-spin-button {
     background-image: url("../img/reason-one-background.jpg");
     background-position: 400px 0;
     background-repeat: no-repeat;
-    min-height: 256px;
     width: 1200px;
 }
 
@@ -756,6 +766,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .benefits-reasons__subtitle {
+    margin: 0;
     font-size: 14px;
     line-height: 21px;
     color: #333333;
