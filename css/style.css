@@ -12,11 +12,16 @@ a {
     text-decoration: none;
 }
 
+p {
+    margin: 0;
+}
+
 .page {
     background-color: #f2f2f2;
 }
 
 .page__container {
+    position: relative;
     margin: 0 auto;
     background-color: #ffffff;
     box-shadow: 0px 5px 15px 0 rgba(0, 1, 1, 0.2);
@@ -212,6 +217,7 @@ a {
 }
 
 .searching__desc {
+    margin: 0;
     font-weight: 400;
     line-height: 24px;
     color: #333333;
@@ -222,21 +228,24 @@ a {
     font-size: 21px;
     line-height: 26px;
     text-align: center;
-    padding: 33px 140px;
+    padding: 31px 140px 29px;
 }
 
 .footer__tag {
     margin: 0;
-    padding-top: 50px;
-    padding-bottom: 50px;
     font-size: 21px;
     text-align: center;
     font-weight: bold;
 }
 
 .footer__item {
+    margin-right: 6px;
     width: 46px;
     height: 48px;
+}
+
+.footer__item:last-child {
+    margin-right: 0;
 }
 
 .footer__link {
@@ -269,6 +278,10 @@ a {
     font-weight: 400;
 }
 
+.copyright__link {
+    line-height: 0;
+}
+
 .copyright__link:hover svg path {
     fill: #81b3d2;
 }
@@ -278,6 +291,7 @@ a {
 }
 
 .searching-form {
+    display: none;
     box-sizing: border-box;
     width: 568px;
     background-color: #ffffff;
@@ -288,8 +302,8 @@ a {
 .searching-form__row {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    margin-bottom: 30px;
+    align-items: baseline;
+    margin: 0 0 29px;
 }
 
 .searching-form__label {
@@ -299,16 +313,17 @@ a {
 }
 
 .searching-form__label--short {
-    width: 80px;
+    width: 64px;
 }
 
 .searching-form__button {
+    margin-top: 26px;
     width: 100%;
     font-size: 21px;
     line-height: 26px;
     text-align: center;
     font-weight: bold;
-    padding: 15px 0;
+    padding: 16px 0;
 }
 
 .searching-form__button:hover {
@@ -322,7 +337,7 @@ a {
 
 .searching-form__input {
     box-sizing: border-box;
-    padding: 8px 0 8px 13px;
+    padding: 7px 0 5px 13px;
     box-shadow: none;
     border: none;
     width: 346px;
@@ -331,6 +346,7 @@ a {
     line-height: 26px;
     font-weight: bold;
     background-color: #f2f2f2;
+    text-transform: uppercase;
 }
 
 .searching-form__input:hover {
@@ -694,8 +710,9 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .benefits-reason__inner {
-    width: 280px;
-    padding: 48px 60px 59px 60px;
+    box-sizing: border-box;
+    width: 400px;
+    padding: 48px 48px 59px 48px;
     background-color: #81b3d2;
 }
 
@@ -738,27 +755,22 @@ input[type=number]::-webkit-outer-spin-button {
 .benefits-reasons__item {
     box-sizing: border-box;
     margin: 0;
-    padding: 0;
+    padding: 48px 48px 59px 48px;
     width: 400px;
     min-height: 256px;
     text-align: center;
     background-color: #eeeeee;
 }
 
-.benefits-reasons__item:nth-child(1) {
-    padding: 50px 97px 63px 95px;
-}
-
-.benefits-reasons__item:nth-child(2) {
-    padding: 50px 69px 64px 69px;
-}
-
-.benefits-reasons__item:nth-child(3) {
-    padding: 50px 77px 64px 77px;
+.benefits-reasons__desc {
+    margin: 0;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
 }
 
 .benefits-reasons__title {
-    margin: 0;
+    margin: 0 0 23px;
     font-size: 21px;
     line-height: 21px;
     color: #000000;
@@ -766,7 +778,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .benefits-reasons__subtitle {
-    margin: 0;
+    margin: 0 0 21px;
     font-size: 14px;
     line-height: 21px;
     color: #333333;
@@ -775,47 +787,46 @@ input[type=number]::-webkit-outer-spin-button {
 
 .searching {
     text-align: center;
-    padding-top: 54px;
+    padding-top: 52px;
 }
 
 .searching .benefits__wrapper {
-    margin-bottom: 47px;
+    margin-bottom: 46px;
 }
 
 .searching__title {
-    margin: 0;
-}
-
-.searching__button {
-    text-align: center;
+    margin: 0 0 23px;
 }
 
 .map {
-    height: 593px;
+    line-height: 0;
 }
 
 .footer {
+    box-sizing: border-box;
+    position: absolute;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    bottom: 0;
+    padding: 36px 101px 36px 132px;
+    background-color: #ffffff;
+    opacity: 0.9
 }
 
-.footer__tag {
-    padding-left: 132px;
-}
+.footer__tag {}
 
 .footer__list {
     padding: 0;
-    margin: 0 auto;
-    width: 156px;
+    margin: 0 0 0 27px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
 }
 
 .footer__copyright {
     display: flex;
     align-items: center;
-    padding-right: 101px;
 }
 
 
