@@ -289,7 +289,9 @@
                     }
                     
                     .searching-form {
-                        display: none;
+                        position: absolute;
+                        left: 50%;
+                        transform: translateX(-50%);
                         box-sizing: border-box;
                         width: 568px;
                         background-color: #ffffff;
@@ -788,6 +790,7 @@
                     }
                     
                     .searching {
+                        position: relative;
                         text-align: center;
                         padding-top: 52px;
                     }

@@ -102,6 +102,40 @@
                     <p class="searching__desc">Укажите предполагаемые даты поездки, <br> И мы покажем вам лучшие предложения гостиниц в Седоне</p>
                 </div>
                 <button class="searching__button button button--brown" type="button">Поиск гостиницы в Седоне</button>
+                <section class="searching-form">
+                    <h2 class="visually-hidden">Форма поиска Гостиницы</h2>
+                    <form class="searching-form__form" action="https://echo.htmlacademy.ru" method="POST">
+                        <p class="searching-form__row">
+                            <label class="searching-form__label" for="date-arrival">Дата заезда:</label>
+                            <!-- иконку календаря реализую на следующем этапе -->
+                            <input class="searching-form__input" id="date-arrival" type="text" name="date-arrival" value="" placeholder="24 апреля 2017">
+                        </p>
+                        <p class="searching-form__row">
+                            <label class="searching-form__label" for="date-departure">Дата выезда:</label>
+                            <!-- иконку календаря реализую на следующем этапе -->
+                            <input class="searching-form__input" id="date-departure" type="text" name="date-departure" value="" placeholder="4 июля 2017">
+                        </p>
+                        <div class="searching-form__wrapper">
+                            <div class="searching-form__row">
+                                <label class="searching-form__label" for="adult-count">Взрослые:</label>
+                                <p class="searching-form__count count">
+                                    <button class="count__button count__button--minus" type="button" aria-label="Убавить количество">
+                                    Минус
+                                    </button><input class="count__input" id="adult-count" type="number" name="adult-count" value="2"><button class="count__button count__button--plus" type="button" aria-label="Прибавить количество">Плюс</button>
+                                </p>
+                            </div>
+                            <div class="searching-form__row">
+                                <label class="searching-form__label searching-form__label--short" for="children-count">Дети:</label>
+                                <p class="searching-form__count count">
+                                    <button class="count__button count__button--minus" type="button" aria-label="Убавить количество">
+                                    Минус
+                                </button><input class="count__input" id="children-count" type="number" name="children-count" value="0"><button class="count__button count__button--plus" type="button" aria-label="Прибавить количество">Плюс</button>
+                                </p>
+                            </div>
+                        </div>
+                        <button class="searching-form__button button" type="button">Найти</button>
+                    </form>
+                </section>
             </section>
         </main>
 
@@ -193,43 +227,6 @@
                 </a>
             </div>
         </footer>
-
-        <!--  -->
-        <!--  -->
-        <section class="searching-form">
-            <h2 class="visually-hidden">Форма поиска Гостиницы</h2>
-            <form class="searching-form__form" action="https://echo.htmlacademy.ru" method="POST">
-                <p class="searching-form__row">
-                    <label class="searching-form__label" for="date-arrival">Дата заезда:</label>
-                    <!-- иконку календаря реализую на следующем этапе -->
-                    <input class="searching-form__input" id="date-arrival" type="text" name="date-arrival" value="" placeholder="24 апреля 2017">
-                </p>
-                <p class="searching-form__row">
-                    <label class="searching-form__label" for="date-departure">Дата выезда:</label>
-                    <!-- иконку календаря реализую на следующем этапе -->
-                    <input class="searching-form__input" id="date-departure" type="text" name="date-departure" value="" placeholder="4 июля 2017">
-                </p>
-                <div class="searching-form__wrapper">
-                    <div class="searching-form__row">
-                        <label class="searching-form__label" for="adult-count">Взрослые:</label>
-                        <p class="searching-form__count count">
-                            <button class="count__button count__button--minus" type="button" aria-label="Убавить количество">
-                            Минус
-                            </button><input class="count__input" id="adult-count" type="number" name="adult-count" value="2"><button class="count__button count__button--plus" type="button" aria-label="Прибавить количество">Плюс</button>
-                        </p>
-                    </div>
-                    <div class="searching-form__row">
-                        <label class="searching-form__label searching-form__label--short" for="children-count">Дети:</label>
-                        <p class="searching-form__count count">
-                            <button class="count__button count__button--minus" type="button" aria-label="Убавить количество">
-                            Минус
-                        </button><input class="count__input" id="children-count" type="number" name="children-count" value="0"><button class="count__button count__button--plus" type="button" aria-label="Прибавить количество">Плюс</button>
-                        </p>
-                    </div>
-                </div>
-                <button class="searching-form__button button" type="button">Найти</button>
-            </form>
-        </section>
     </div>
 </body>
 
