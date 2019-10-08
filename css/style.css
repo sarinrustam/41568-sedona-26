@@ -93,10 +93,6 @@ p {
     line-height: 26px;
     text-align: center;
     font-weight: bold;
-    display: block;
-    width: 100%;
-    padding-top: 15px;
-    padding-bottom: 15px;
     color: #000000;
 }
 
@@ -794,15 +790,16 @@ input[type=number] {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     width: 241px;
+    padding: 15px 0;
 }
 
-.header__item:nth-child(4n+1) a,
-.header__item:nth-child(4n+2) a {
+.header__item:nth-child(4n+1),
+.header__item:nth-child(4n+2) {
     text-align: left;
 }
 
-.header__item:nth-child(4n+3) a,
-.header__item:nth-child(4n+4) a {
+.header__item:nth-child(4n+3),
+.header__item:nth-child(4n+4) {
     text-align: right;
 }
 
