@@ -105,13 +105,6 @@ p {
 
 /* main */
 
-.benefits__title {
-    font-size: 21px;
-    line-height: 26px;
-    font-weight: bold;
-    text-align: center;
-}
-
 .benefits__desc {
     font-weight: 400;
     text-align: center;
@@ -122,6 +115,8 @@ p {
 /* REASONS */
 
 .benefits-reason__title {
+    width: 155px;
+    margin: 0 auto 23px;
     font-size: 21px;
     line-height: 21px;
     font-weight: bold;
@@ -166,6 +161,8 @@ p {
 }
 
 .advice__item {
+    box-sizing: border-box;
+    padding: 0 48px;
     width: 400px;
     min-height: 330px;
 }
@@ -315,6 +312,7 @@ p {
 }
 
 .searching-form__row {
+    position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -324,7 +322,7 @@ p {
     -webkit-box-align: baseline;
     -ms-flex-align: baseline;
     align-items: baseline;
-    margin: 0 0 29px;
+    margin: 0 0 30px;
 }
 
 .searching-form__label {
@@ -338,7 +336,7 @@ p {
 }
 
 .searching-form__button {
-    margin-top: 26px;
+    margin-top: 23px;
     width: 100%;
     font-size: 21px;
     line-height: 26px;
@@ -347,8 +345,26 @@ p {
     padding: 16px 0;
 }
 
-.searching-form__button:hover {
-    background-color: #669EC0;
+.searching-form__input-img {
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 9px;
+    border: 0;
+    width: 21px;
+    height: 22px;
+    line-height: 0;
+    background-color: transparent;
+}
+
+.searching-form__input-img:hover svg g {
+    fill: #1f1f1f;
+}
+
+.searching-form__input-img:focus svg g {
+    fill: #81b3d2;
 }
 
 .searching-form__button:active {
@@ -359,10 +375,10 @@ p {
 .searching-form__input {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    padding: 7px 0 5px 13px;
+    border: 2px solid #f2f2f2;
+    padding: 5px 0 3px 11px;
     -webkit-box-shadow: none;
     box-shadow: none;
-    border: none;
     width: 346px;
     font-family: "PT Sans", Arial, Helvetica, sans-serif;
     font-size: 14px;
@@ -378,7 +394,7 @@ p {
 
 .searching-form__input:focus {
     background-color: #ffffff;
-    padding: 6px 0 6px 11px;
+    padding: 5px 0 3px 11px;
     border: 2px solid #e5e5e5;
     outline: none;
 }
@@ -421,26 +437,6 @@ p {
     line-height: 26px;
     font-weight: bold;
     color: #000000;
-}
-
-.searching-form__input:focus::-webkit-input-placeholder {
-    /* padding-left: 11px; */
-}
-
-.searching-form__input:focus::-moz-placeholder {
-    /* padding-left: 11px; */
-}
-
-.searching-form__input:focus:-ms-input-placeholder {
-    /* padding-left: 11px; */
-}
-
-.searching-form__input:focus::-ms-input-placeholder {
-    /* padding-left: 11px; */
-}
-
-.searching-form__input:focus::placeholder {
-    /* padding-left: 11px; */
 }
 
 .searching-form__wrapper {
@@ -503,7 +499,9 @@ p {
 }
 
 .count__input {
-    font: inherit;
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: bold;
     text-align: center;
     width: 38px;
     padding: 6px 0;
@@ -826,20 +824,25 @@ input[type=number] {
     padding-left: 370px;
 }
 
+.benefits__wrapper {
+    width: 568px;
+    margin: 0 auto;
+}
+
 .benefits__title {
-    margin: 0;
+    /* width: 440px; */
+    /* margin: 0; */
     padding-top: 61px;
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: bold;
+    text-align: center;
 }
 
 .benefits__desc {
     padding-top: 27px;
     padding-bottom: 50px;
     margin: 0;
-}
-
-.benefits-reason__title {
-    margin: 0;
-    margin-bottom: 23px;
 }
 
 .benefits-reason__inner {
@@ -902,11 +905,15 @@ input[type=number] {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     margin: 0;
-    padding: 48px 48px 59px 48px;
+    padding: 48px 62px 59px;
     width: 400px;
     min-height: 256px;
     text-align: center;
     background-color: #eeeeee;
+}
+
+.benefits-reasons__item:nth-child(3) {
+    padding: 48px 72px 59px;
 }
 
 .benefits-reasons__desc {
@@ -917,7 +924,8 @@ input[type=number] {
 }
 
 .benefits-reasons__title {
-    margin: 0 0 23px;
+    width: 155px;
+    margin: 0 auto 23px;
     font-size: 21px;
     line-height: 21px;
     color: #000000;
