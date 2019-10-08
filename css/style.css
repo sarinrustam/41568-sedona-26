@@ -520,6 +520,11 @@ input[type=number]::-webkit-outer-spin-button {
     margin: 0;
 }
 
+input[type=number] {
+    -moz-appearance: textfield;
+    /* Firefox */
+}
+
 .count__button,
 .count__input {
     background-color: #f2f2f2;
