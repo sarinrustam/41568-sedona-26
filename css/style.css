@@ -326,6 +326,9 @@ p {
 }
 
 .searching-form__label {
+    font-family: "PT Sans", Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 26px;
     width: 112px;
     text-align: left;
     font-weight: bold;
@@ -531,6 +534,10 @@ input[type=number] {
 /* Catalog */
 
 .searching-hotels__title {
+    position: absolute;
+    margin: 0;
+    top: 0;
+    left: -1px;
     font-size: 16px;
     line-height: 21px;
     font-weight: bold;
@@ -647,7 +654,7 @@ input[type=number] {
 .searching-hotels__button {
     display: block;
     margin-left: 84px;
-    padding: 6px 33px 6px 34px;
+    padding: 7px 33px 5px 34px;
     font-size: 14px;
     line-height: 20px;
     color: #ffffff;
@@ -669,10 +676,10 @@ input[type=number] {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    padding: 31px 71px 29px 71px;
+    -webkit-box-align: baseline;
+    -ms-flex-align: baseline;
+    align-items: baseline;
+    padding: 31px 73px 27px 71px;
 }
 
 .sort__list {
@@ -686,7 +693,7 @@ input[type=number] {
 }
 
 .sort__title {
-    margin: 0 46px 0 0;
+    margin: 0 48px 0 0;
     font-size: 21px;
     line-height: 26px;
     font-weight: bold;
@@ -695,7 +702,7 @@ input[type=number] {
 }
 
 .sort__text {
-    margin: 0 41px 0 0;
+    margin: 0 40px 0 0;
     font-size: 12px;
     line-height: 18px;
     font-weight: 400;
@@ -1006,8 +1013,6 @@ input[type=number] {
 
 /* Catalog */
 
-.searching-hotels {}
-
 .searching-hotels__section {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -1056,13 +1061,6 @@ input[type=number] {
     color: #ffffff;
     position: relative;
     padding-left: 40px;
-}
-
-.searching-hotels__title {
-    position: absolute;
-    margin: 0;
-    top: 0;
-    left: 0;
 }
 
 .sort__item {
