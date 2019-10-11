@@ -75,6 +75,20 @@ p {
     color: rgba(255, 255, 255, 0.3);
 }
 
+.header__list {
+    padding: 0;
+    margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 0 72px;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
 .header__list a:hover {
     color: #81B3D2;
 }
@@ -82,6 +96,41 @@ p {
 .header__list a:focus {
     color: #000000;
     opacity: 0.3;
+}
+
+.header__nav {
+    position: relative;
+}
+
+.header__item {
+    display: block;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 241px;
+    padding: 15px 0;
+}
+
+.header__item:nth-child(4n+1),
+.header__item:nth-child(4n+2) {
+    text-align: left;
+}
+
+.header__item:nth-child(4n+3),
+.header__item:nth-child(4n+4) {
+    text-align: right;
+}
+
+.header__item:nth-child(4n+3) {
+    margin-left: auto;
+}
+
+.header__logo {
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    top: 0;
 }
 
 .header__item--current .header__link {
@@ -97,9 +146,15 @@ p {
 }
 
 .intro {
-    /* Это просто бэкграунд */
     min-height: 508px;
     background: url("../img/intro-mask.svg") 0 100% no-repeat, url("../img/intro-background.png") 0 -56px no-repeat;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-top: 76px;
+}
+
+.intro__image {
+    padding-left: 370px;
 }
 
 
@@ -109,10 +164,10 @@ p {
     font-weight: 400;
     text-align: center;
     color: #333333;
+    padding-top: 27px;
+    padding-bottom: 50px;
+    margin: 0;
 }
-
-
-/* REASONS */
 
 .benefits-reason__title {
     width: 155px;
@@ -139,14 +194,11 @@ p {
     color: #ffffff;
     font-weight: 400;
     text-align: center;
+    margin: 0;
 }
 
 .benefits-reason {
     background-color: #81B3D2;
-}
-
-.benefits-reason__desc {
-    margin: 0;
 }
 
 .benefits-reason__background {
@@ -535,9 +587,10 @@ input[type=number] {
 
 .searching-hotels__title {
     position: absolute;
+    padding-left: 3px;
     margin: 0;
     top: 0;
-    left: -1px;
+    left: 0px;
     font-size: 16px;
     line-height: 21px;
     font-weight: bold;
@@ -557,7 +610,7 @@ input[type=number] {
 
 .searching-hotels__price label {
     display: inline-block;
-    vertical-align: top;
+    /* vertical-align: top; */
     font-size: 14px;
     line-height: 21px;
     text-align: left;
@@ -565,16 +618,25 @@ input[type=number] {
     color: #ffffff;
 }
 
-.searching-hotels__price .price__min {
+.price__min {
     width: 94px;
-    padding-left: 61px;
+    padding-left: 64px;
     line-height: 33px;
+    margin-right: -2px;
+    font-family: "PT Sans", Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
 }
 
-.searching-hotels__price .price__max {
+.price__max {
     width: 103px;
     padding-left: 55px;
-    line-height: 33px;
+    font-family: "PT Sans", Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 21px;
+    padding-top: 5px;
+    font-weight: 400;
 }
 
 .searching-hotels__price {
@@ -609,6 +671,20 @@ input[type=number] {
     color: #ffffff;
     background: none;
     border: none;
+}
+
+.min-price {
+    font-family: "PT Sans", Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+}
+
+.max-price {
+    font-family: "PT Sans", Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
 }
 
 .searching-hotels__range {
@@ -652,11 +728,13 @@ input[type=number] {
 }
 
 .searching-hotels__button {
-    display: block;
-    margin-left: 84px;
-    padding: 7px 33px 5px 34px;
+    font-family: "PT Sans", Arial, Helvetica, sans-serif;
     font-size: 14px;
-    line-height: 20px;
+    line-height: 21px;
+    font-weight: 400;
+    display: block;
+    margin-left: 85px;
+    padding: 6px 33px 5px 34px;
     color: #ffffff;
     text-transform: uppercase;
     background: transparent;
@@ -767,69 +845,7 @@ input[type=number] {
 }
 
 
-/*  */
-
-
 /* Styles for flexbox */
-
-.header__nav {
-    position: relative;
-}
-
-.header__list {
-    padding: 0;
-    margin: 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    padding: 0 72px;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-}
-
-.header__item {
-    display: block;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    width: 241px;
-    padding: 15px 0;
-}
-
-.header__item:nth-child(4n+1),
-.header__item:nth-child(4n+2) {
-    text-align: left;
-}
-
-.header__item:nth-child(4n+3),
-.header__item:nth-child(4n+4) {
-    text-align: right;
-}
-
-.header__item:nth-child(4n+3) {
-    margin-left: auto;
-}
-
-.header__logo {
-    position: absolute;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    transform: translateX(-50%);
-    top: 0;
-}
-
-.intro {
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    padding-top: 76px;
-}
-
-.intro__image {
-    padding-left: 370px;
-}
 
 .benefits__wrapper {
     width: 568px;
@@ -844,12 +860,6 @@ input[type=number] {
     line-height: 26px;
     font-weight: bold;
     text-align: center;
-}
-
-.benefits__desc {
-    padding-top: 27px;
-    padding-bottom: 50px;
-    margin: 0;
 }
 
 .benefits-reason__inner {
