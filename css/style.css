@@ -587,7 +587,7 @@ input[type=number] {
 
 .searching-hotels__title {
     position: absolute;
-    padding-left: 3px;
+    padding-left: 0px;
     margin: 0;
     top: 0;
     left: 0px;
@@ -596,6 +596,10 @@ input[type=number] {
     font-weight: bold;
     text-align: left;
     color: #ffffff;
+}
+
+.searching-hotels__title--last {
+    padding-left: 3px;
 }
 
 .searching-hotels {
