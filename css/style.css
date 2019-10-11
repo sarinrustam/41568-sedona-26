@@ -666,12 +666,13 @@ input[type=number] {
 }
 
 .searching-hotels__price input {
-    width: 50px;
-    margin: 0;
+    font-family: "PT Sans", Arial, Helvetica, sans-serif;
     font-size: 14px;
     line-height: 21px;
-    text-align: left;
     font-weight: 400;
+    text-align: left;
+    width: 50px;
+    margin: 0;
     color: #ffffff;
     background: none;
     border: none;
