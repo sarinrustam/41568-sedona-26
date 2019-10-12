@@ -103,7 +103,6 @@ p {
 }
 
 .header__item {
-    display: block;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     width: 241px;
@@ -608,13 +607,13 @@ input[type=number] {
     display: flex;
     background-image: url("../img/filter-background.jpg");
     background-repeat: no-repeat;
-    background-position: 0 0;
+    background-position: 0px -56px;
     padding: 28px 72px 28px 72px;
 }
 
 .searching-hotels__price label {
     display: inline-block;
-    /* vertical-align: top; */
+    vertical-align: baseline;
     font-size: 14px;
     line-height: 21px;
     text-align: left;
@@ -625,22 +624,13 @@ input[type=number] {
 .price__min {
     width: 94px;
     padding-left: 64px;
-    line-height: 33px;
     margin-right: -2px;
-    font-family: "PT Sans", Arial, Helvetica, sans-serif;
-    font-size: 14px;
-    line-height: 21px;
-    font-weight: 400;
 }
 
 .price__max {
     width: 103px;
     padding-left: 55px;
-    font-family: "PT Sans", Arial, Helvetica, sans-serif;
-    font-size: 14px;
-    line-height: 21px;
     padding-top: 5px;
-    font-weight: 400;
 }
 
 .searching-hotels__price {
@@ -676,20 +666,6 @@ input[type=number] {
     color: #ffffff;
     background: none;
     border: none;
-}
-
-.min-price {
-    font-family: "PT Sans", Arial, Helvetica, sans-serif;
-    font-size: 14px;
-    line-height: 21px;
-    font-weight: 400;
-}
-
-.max-price {
-    font-family: "PT Sans", Arial, Helvetica, sans-serif;
-    font-size: 14px;
-    line-height: 21px;
-    font-weight: 400;
 }
 
 .searching-hotels__range {
@@ -733,7 +709,6 @@ input[type=number] {
 }
 
 .searching-hotels__button {
-    font-family: "PT Sans", Arial, Helvetica, sans-serif;
     font-size: 14px;
     line-height: 21px;
     font-weight: 400;
