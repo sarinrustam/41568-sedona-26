@@ -24,12 +24,12 @@ buttonSearch.addEventListener('click', function(evt) {
     popup.classList.toggle('searching-form--hide');
     if (storage) {
         loginArrival.value = storage;
-        loginDeparture.focus();
+        // loginDeparture.focus();
     } else {
-        loginArrival.focus();
+        // loginArrival.focus();
     }
 
-    loginArrival.focus();
+    // loginArrival.focus();
 });
 
 form.addEventListener('submit', function(evt) {

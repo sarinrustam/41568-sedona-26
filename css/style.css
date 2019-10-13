@@ -17,16 +17,24 @@ p {
 }
 
 .page {
+    position: relative;
     background-color: #f2f2f2;
+    z-index: -5;
 }
 
 .page__container {
+    z-index: -4;
     position: relative;
     margin: 0 auto;
     background-color: #ffffff;
     -webkit-box-shadow: 0px 5px 15px 0 rgba(0, 1, 1, 0.2);
     box-shadow: 0px 5px 15px 0 rgba(0, 1, 1, 0.2);
     width: 1200px;
+}
+
+.container {
+    z-index: -3;
+    position: relative;
 }
 
 .visually-hidden {
@@ -448,7 +456,7 @@ p {
     transform: translate(-50%, 0);
     -webkit-animation: boom 0.7s;
     animation: boom 0.7s;
-    z-index: 3;
+    z-index: -1;
 }
 
 .searching-form--hide {
@@ -1025,17 +1033,20 @@ input[type=number] {
 
 .searching .benefits__wrapper {
     position: relative;
-    z-index: 4;
     background-color: #ffffff;
 }
 
 .map {
+    background-image: url("../img/map.png");
+    background-position: 0 0;
+    background-repeat: no-repeat;
     position: relative;
+    z-index: -2;
     line-height: 0;
+    min-height: 593px;
 }
 
 .map iframe {
-    z-index: 2;
     border: none;
 }
 
@@ -1043,7 +1054,7 @@ input[type=number] {
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 1;
+    /* z-index: 1; */
 }
 
 .footer {
