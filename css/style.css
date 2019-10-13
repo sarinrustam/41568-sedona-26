@@ -977,11 +977,11 @@
  }
  
  .map {
+     position: relative;
      line-height: 0;
  }
  
  .map iframe {
-     position: relative;
      z-index: 2;
      border: none;
  }
@@ -991,7 +991,6 @@
      top: 0;
      left: 0;
      z-index: 1;
-     margin: 0;
  }
  
  .footer {
