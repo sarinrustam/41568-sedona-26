@@ -14,7 +14,7 @@ try {
 }
 
 
-popup.classList.add('searching-form--hide');
+// popup.classList.add('searching-form--hide');
 
 buttonSearch.addEventListener('click', function(evt) {
     evt.preventDefault();
