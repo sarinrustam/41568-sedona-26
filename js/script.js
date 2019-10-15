@@ -9,7 +9,7 @@ let isStorageSupport = true;
 
 try {
     storage = localStorage.getItem('loginArrival');
-} catch {
+} catch (error) {
     isStorageSupport = false;
 }
 
