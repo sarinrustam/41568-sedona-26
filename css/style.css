@@ -423,15 +423,15 @@ p {
     50%,
     70%,
     90% {
-        -webkit-transform: translate(calc(-50% - 5px), 0);
-        transform: translate(calc(-50% - 5px), 0);
+        -webkit-transform: translate(-51%, 0);
+        transform: translate(-51%, 0);
     }
     20%,
     40%,
     60%,
     80% {
-        -webkit-transform: translate(calc(-50% + 5px), 0);
-        transform: translate(calc(-50% + 5px), 0);
+        -webkit-transform: translate(-49%, 0);
+        transform: translate(-49%, 0);
     }
 }
 
@@ -546,6 +546,7 @@ p {
     -webkit-box-shadow: none;
     box-shadow: none;
     width: 346px;
+    min-height: 38px;
     font-family: "PT Sans", Arial, Helvetica, sans-serif;
     font-size: 14px;
     line-height: 26px;
