@@ -137,6 +137,7 @@ p {
     -ms-transform: translateX(-50%);
     transform: translateX(-50%);
     top: 0;
+    vertical-align: middle;
 }
 
 .header__item--current .header__link {
@@ -153,6 +154,7 @@ p {
 
 .intro {
     min-height: 508px;
+    background-color: #3e759f;
     background: url("../img/intro-mask.svg") 0 100% no-repeat, url("../img/intro-background.png") 0 -56px no-repeat;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -214,7 +216,7 @@ p {
 }
 
 .benefits-reason__background {
-    background-image: url("../img/reason-one-background.jpg");
+    background-image: #81b3d2 url("../img/reason-one-background.jpg");
     background-position: 0 0;
     background-repeat: no-repeat;
 }
@@ -233,7 +235,7 @@ p {
 .advice__item {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    padding: 0 48px;
+    padding: 0 48px 62px;
     width: 400px;
     min-height: 330px;
 }
@@ -715,6 +717,7 @@ input[type=number] {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    background-color: #81a5c7;
     background-image: url("../img/filter-background.jpg");
     background-repeat: no-repeat;
     background-position: 0px -56px;
@@ -723,7 +726,8 @@ input[type=number] {
 
 .searching-hotels__price label {
     display: inline-block;
-    vertical-align: baseline;
+    vertical-align: middle;
+    padding-top: 5px;
     font-size: 14px;
     line-height: 21px;
     text-align: left;
@@ -908,6 +912,7 @@ input[type=number] {
     text-align: left;
     color: #000000;
     margin: -4px 0 6px 0;
+    max-width: 700px;
 }
 
 .hotels__text {
@@ -1141,6 +1146,7 @@ input[type=number] {
 
 .searching-hotels__label {
     font-size: 14px;
+    vertical-align: baseline;
     line-height: 21px;
     font-weight: 400;
     color: #ffffff;
