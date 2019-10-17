@@ -1,11 +1,11 @@
-let buttonSearch = document.querySelector('.searching__button');
-let popup = document.querySelector('.searching-form');
-let loginArrival = popup.querySelector('[name=date-arrival]');
-let loginDeparture = popup.querySelector('[name=date-departure]');
-let people = popup.querySelector('.count__input')
-let form = popup.querySelector('form');
-let storage = "";
-let isStorageSupport = true;
+var buttonSearch = document.querySelector('.searching__button');
+var popup = document.querySelector('.searching-form');
+var loginArrival = popup.querySelector('[name=date-arrival]');
+var loginDeparture = popup.querySelector('[name=date-departure]');
+var people = popup.querySelector('.count__input')
+var form = popup.querySelector('form');
+var storage = "";
+var isStorageSupport = true;
 
 try {
     storage = localStorage.getItem('loginArrival');
@@ -13,8 +13,6 @@ try {
     isStorageSupport = false;
 }
 
-
-// popup.classList.add('searching-form--hide');
 
 buttonSearch.addEventListener('click', function(evt) {
     evt.preventDefault();
@@ -24,12 +22,7 @@ buttonSearch.addEventListener('click', function(evt) {
     popup.classList.toggle('searching-form--hide');
     if (storage) {
         loginArrival.value = storage;
-        // loginDeparture.focus();
-    } else {
-        // loginArrival.focus();
     }
-
-    // loginArrival.focus();
 });
 
 form.addEventListener('submit', function(evt) {
