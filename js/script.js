@@ -4,7 +4,7 @@ var loginArrival = popup.querySelector('[name=date-arrival]');
 var loginDeparture = popup.querySelector('[name=date-departure]');
 var people = popup.querySelector('.count__input')
 var form = popup.querySelector('form');
-var storage = "";
+var storage = '';
 var isStorageSupport = true;
 
 try {
@@ -13,6 +13,7 @@ try {
     isStorageSupport = false;
 }
 
+popup.classList.add('searching-form--hide');
 
 buttonSearch.addEventListener('click', function(evt) {
     evt.preventDefault();
