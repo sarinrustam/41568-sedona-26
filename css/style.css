@@ -225,6 +225,7 @@ a {
     display: flex;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
 }
 
@@ -858,6 +859,7 @@ input[type=number] {
     display: flex;
     margin: 0 0 -10px 0;
     max-width: 600px;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
 }
 
@@ -987,6 +989,7 @@ input[type=number] {
     display: flex;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     background-color: #eeeeee;
 }
@@ -1088,6 +1091,7 @@ input[type=number] {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     max-width: 300px;
 }
@@ -1143,7 +1147,6 @@ input[type=number] {
 
 .searching-hotels__input:focus+.searching-hotels__label::after {
     outline: 5px auto rgba(0, 103, 244, 0.247);
-    ;
 }
 
 .searching-hotels__label::after {
